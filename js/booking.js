@@ -90,10 +90,7 @@ function render() {
         // // onclick function (if it more or less)
         showMoreDiv.onclick = function showMore() {
             if (extraImgContainer.style.display === 'none') {
-                for (let j = 0; j < allExtraImgContainer.length; j++) {
-                    allExtraImgContainer[j].style.display = 'none'
-                    allShowMoreDiv[j].textContent = 'SHOW MORE'
-                }
+                displayNone()
                 extraImgContainer.style.display = 'block';
                 showMoreDiv.textContent = 'SHOW LESS'
             } else {
@@ -104,7 +101,7 @@ function render() {
 
         // local storage for form page
         bookNowDiv.onclick = function showMore() {
-            let bookedVilla = [Villas.all[i].thumbnails, Villas.all[i].villaName];
+            let bookedVilla = [Villas.all[i].villaName, Villas.all[i].price, Villas.all[i].thumbnails];
             localStorage.setItem('bookedVilla', JSON.stringify(bookedVilla));
             window.location = ('../html/formBooking.html');
         }
@@ -167,11 +164,17 @@ function doAll() {
 }
 doAll()
 
-// filtering function
-// add event listener 
-form.addEventListener('submit', filteringData);
-// add listener function
-function filteringData(event) {
+// make every villa container : display none
+function displayNone() {
+    for (let i = 0; i < allExtraImgContainer.length; i++) {
+        allExtraImgContainer[i].style.display = 'none'
+        allShowMoreDiv[i].textContent = 'SHOW MORE'
+    }
+}
+displayNone()
+
+// filtering function - add event listener 
+form.addEventListener('submit', function filteringData(event) {
     // prevent default
     event.preventDefault();
     // for loop and return every villa div to display none
@@ -197,7 +200,7 @@ function filteringData(event) {
                 allVillas[i].style.display = 'block';
             }
         }
-        // if capacity and location true
+        // if capacity and location are true
     } else {
         for (let i = 0; i < allVillas.length; i++) {
             if (Villas.all[i].capacity === form.capacity.value && Villas.all[i].location === form.location.value) {
@@ -207,4 +210,4 @@ function filteringData(event) {
     }
     // reset form value
     form.reset()
-}
+});
