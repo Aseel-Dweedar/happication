@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/addCottage.css">
+    <link rel="stylesheet" href="../css/reset.css">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <form id="form">
+            <fieldset>
+                <legend>ADD COTTAGE REQUEST</legend>
+
+                <label for="ownerName">Owner's name</label>
+                <input type="text" id="ownerName">
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="07">
+
+                <label for="cottageName">Cottage's name</label>
+                <input type="text" id="cottageName">
+
+                <label for="location">Cottage's Location</label>
+                <select id="location">
+                    <option value="Amman">Amman</option>
+                    <option value="Irbid">Irbid</option>
+                    <option value="Zarqa">Zarqa</option>
+                    <option value="Mafraq">Mafraq</option>
+                    <option value="Ajloun">Ajloun</option>
+                    <option value="Jerash">Jerash</option>
+                    <option value="Madaba">Madaba</option>
+                    <option value="Balqa">Balqa</option>
+                    <option value="Karak">Karak</option>
+                    <option value="Tafileh">Tafileh</option>
+                    <option value="Ma'an">Ma'an</option>
+                    <option value="Aqaba">Aqaba</option>
+                </select>
+
+                <label for="price">Price Per Night</label>
+                <input type="number" id="price" step="10" min="0" placeholder="JOD">
+
+                <label for="description">Description</label>
+                <input type="text" id="description" placeholder="Describe your cottage, what do you have there !! ">
+
+                <input type="checkbox" id="agree">
+                <label for="agree">I agree to the <a href="">Terms Of Service</a></label>
+
+                <button id="submit">Add New Cottage</button>
+
+            </fieldset>
+        </form>
+        <div>
+            <h3>Cottages List</h3>
+            <div id="cottagesList">
+            </div>
+
+        </div>
+    </main>
+    <footer></footer>
+    <script src="../js/addCottage.js"></script>
+</body>
+
+</html>
