@@ -21,6 +21,7 @@ function render() {
     for (let i = 0; i < Cottage.all.length; i++) {
 
         let oneCottage = document.createElement('div')
+
         cottagesList.appendChild(oneCottage)
         oneCottage.className = 'oneCottage';
 
@@ -45,7 +46,7 @@ function render() {
 
         let owner = document.createElement('p')
         oneCottage.appendChild(owner);
-        owner.textContent = `Owner's name: ${Cottage.all[i].ownerName}`;
+        owner.textContent = Cottage.all[i].ownerName;
 
         let cottage = document.createElement('p')
         oneCottage.appendChild(cottage);
@@ -58,6 +59,17 @@ function render() {
         let cottagePrice = document.createElement('p')
         oneCottage.appendChild(cottagePrice);
         cottagePrice.textContent = `Price per day: ${Cottage.all[i].price} JD`;
+
+        if (request.textContent === "Pending") {
+            let deleteRequest = document.createElement('button')
+            oneCottage.appendChild(deleteRequest);
+            deleteRequest.textContent = 'DELETE REQUEST';
+            deleteRequest.onclick = function() {
+                Cottage.all.splice(i, 1);
+                saveData();
+                render();
+            }
+        }
     }
 }
 
