@@ -1,3 +1,5 @@
+"use strict";
+
 // get elements by id
 const villaContainer = document.getElementById('villaContainer');
 const form = document.getElementById('form');

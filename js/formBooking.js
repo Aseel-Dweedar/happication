@@ -1,3 +1,5 @@
+"use strict";
+
 const form = document.getElementById('form')
 const villaInfo = document.getElementById('villaInfo')
 const model = document.getElementById('model')
