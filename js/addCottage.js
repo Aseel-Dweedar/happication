@@ -1,3 +1,5 @@
+"use strict";
+
 // id elements by id
 const form = document.getElementById('form');
 const cottagesList = document.getElementById('cottagesList');
