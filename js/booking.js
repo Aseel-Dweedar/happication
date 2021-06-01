@@ -128,19 +128,16 @@ function addVillas() {
     new Villas('../img/villas/Zaid/thum.jpg', 'ZAID VILLA', 'Salt', 'barbecue, Children play area, DJ, football stadium, Heated swimming pool, Sun loungers,table tennis, Play Station, WIFI.', 160, '1-9', ["../img/villas/Zaid/1 (5).jpg", "../img/villas/Zaid/1 (7).jpg", "../img/villas/Zaid/1 (1).jpg"]);
 
     new Villas('../img/villas/adam/thum.jpg', 'ADAM VILLA', 'Salt', 'barbecue, Heated swimming pool, Play Station.', 170, '10-19', ["../img/villas/adam/1.jpg", "../img/villas/adam/3.jpg", "../img/villas/adam/9.jpg"]);
-    // adam.getPrice();
 
     new Villas('../img/villas/paradise/thum.jpg', 'PARADISE VILLA', 'Salt', 'barbecue, children Swimming pool, Air conditioned rooms, Jacuzzi, Children play area, Sun loungers, table tennis, Play Station.', 200, '10-19', ["../img/villas/paradise/3.jpg", "../img/villas/paradise/7.jpg", "../img/villas/paradise/9.jpg"]);
 
     new Villas('../img/villas/sawa/thum.jpg', 'SAWA VILLA', 'Salt', 'barbecue, children Swimming pool, Air-conditioned rooms, Jacuzzi, Children play area, Play Station', 220, '20-50', ["../img/villas/sawa/1.jpg", "../img/villas/sawa/5.jpg", "../img/villas/sawa/7.jpg"]);
-    // sawa.getPrice();
 
     new Villas('../img/villas/wings/thum.jpg', 'WINGS VILLA', 'Irbid', 'barbecue, DJ, Heated swimming pool, External headphones‏, Heated swimming pool, Sun loungers.', 130, '1-9', ["../img/villas/wings/1.jpg", "../img/villas/wings/4.jpg", "../img/villas/wings/7.jpg"]);
 
     new Villas('../img/villas/yafa/thum.jpg', 'YAFA VILLA', 'Irbid', 'Sun loungers, Air-conditioned rooms, WIFI, barbecue, table tennis, DJ, Play Station,External headphones', 110, '1-9', ["../img/villas/yafa/1.jpg", "../img/villas/yafa/3.jpg", "../img/villas/yafa/4.jpg"]);
 
     new Villas('../img/villas/yalla/thum.jpg', 'YALLA VILLA', 'Irbid', 'children Swimming pool, Sun loungers, Air-conditioned rooms, barbecue, Play Station, WIFI, External headphones, DJ, Billiard, Jacuzzi, table tennis ', 120, '1-9', ["../img/villas/yalla/1.jpg", "../img/villas/yalla/2.jpg", "../img/villas/yalla/3.jpg"]);
-    // yalla.getPrice();
 
     new Villas('../img/villas/Dream/thum.jpg', 'DREAM VILLA', 'Irbid', 'Air-conditioned rooms, DJ, WIFI, barbecue, Play Station, External headphones, Children play area, Sun loungers', 170, '10-19', ["../img/villas/Dream/1 (7).jpg", "../img/villas/Dream/1 (14).jpg", "../img/villas/Dream/1 (4).jpg"]);
 
@@ -153,7 +150,6 @@ function addVillas() {
     new Villas('../img/villas/Byblos/thum.jpg', 'BYBLOS VILLA', 'Jerash', 'External headphones, barbecue, Air-conditioned rooms, Sun loungers,DJ, WIFI', 170, '10-19', ["../img/villas/Byblos/1 (2).jpg", "../img/villas/Byblos/1 (4).jpg", "../img/villas/Byblos/1 (5).jpg"]);
 
     new Villas('../img/villas/Farah/thum.jpg', 'FARAH VILLA', 'Jerash', 'External headphones, barbecue, Air-conditioned rooms, Sun loungers,DJ, WIFI', 190, '20-50', ["../img/villas/Farah/1 (1).jpg", "../img/villas/Farah/1 (4).jpg", "../img/villas/Farah/1 (7).jpg"]);
-    // farah.getPrice();
 
     new Villas('../img/villas/Hawaii/thum.jpg', 'HAWAII VILLA', 'Jerash', 'Air-conditioned rooms, DJ, WIFI, barbecue, Play Station, External headphones, childrens play area, Sun loungers', 220, '20-50', ["../img/villas/Hawaii/1 (2).jpg", "../img/villas/Hawaii/1 (4).jpg", "../img/villas/Hawaii/1 (12).jpg"]);
 }
