@@ -11,28 +11,40 @@
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <img class="logo" src="../img/logo.png" alt="logo">
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../html/about-us.html">About us</a>
+            <a href="../html/addCottage.html">Add Cottage</a>
+            <a href="../html/booking.html">Book Now</a>
+        </nav>
+    </header>
     <main>
         <form id="form">
-            <fieldset>
-                <legend>Find a cottage</legend>
-
-                <label for="location">Location</label>
-                <select id="location">
-                    <option value="">Choose Location</option>
-                    <option value="Amman">Amman</option>
-                    <option value="Salt">Salt</option>
-                    <option value="Irbid">Irbid</option>
-                    <option value="Jerash">Jerash</option>
-                </select>
-
-                <label for="capacity">Capacity</label>
-                <select id="capacity">
-                    <option value="">Choose Capacity</option>
-                    <option value="1-9">1-9 Person</option>
-                    <option value="10-19">10-19 Person</option>
-                    <option value="20-50">20-50 Person</option>
-                </select>
+            <fieldset id="formField">
+                <div id="gridForm">
+                    <div>
+                        <label for="location">You Are Looking In:</label>
+                        <select id="location">
+                        <option value="">Choose Location</option>
+                        <option value="Amman">Amman</option>
+                        <option value="Salt">Salt</option>
+                        <option value="Irbid">Irbid</option>
+                        <option value="Jerash">Jerash</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="capacity">For How Many People:
+                    </label>
+                        <select id="capacity">
+                        <option value="">Choose Capacity</option>
+                        <option value="1-9">1-9 Person</option>
+                        <option value="10-19">10-19 Person</option>
+                        <option value="20-50">20-50 Person</option>
+                        </select>
+                    </div>
+                </div>
 
                 <button id="submit">BROWSE</button>
 
@@ -40,7 +52,14 @@
         </form>
         <div id="villaContainer"></div>
     </main>
-    <footer></footer>
+    <footer>
+        <div id="social-contact">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+        </div>
+        <p>All Rights reserved &copy; Happication 2021</p>
+    </footer>
     <script src="../js/booking.js"></script>
 </body>
 

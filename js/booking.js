@@ -42,6 +42,7 @@ function render() {
         let thumbnailImg = document.createElement('img');
         oneVilla.appendChild(thumbnailImg);
         thumbnailImg.src = Villas.all[i].thumbnails;
+        thumbnailImg.className = 'thumbnailImg'
 
         // add div for villa info
         let infoContainer = document.createElement('div');
@@ -61,15 +62,16 @@ function render() {
 
         let priceDiv = document.createElement('p');
         infoContainer.appendChild(priceDiv);
-        priceDiv.textContent = `PRICE: ${Villas.all[i].price}`;
+        priceDiv.textContent = `PRICE PER DAY: ${Villas.all[i].price}`;
 
         let capacityDiv = document.createElement('p');
         infoContainer.appendChild(capacityDiv);
-        capacityDiv.textContent = `CAPACITY: ${Villas.all[i].capacity}`;
+        capacityDiv.textContent = `CAPACITY: ${Villas.all[i].capacity} Persons`;
 
         let bookNowDiv = document.createElement('button');
         infoContainer.appendChild(bookNowDiv);
         bookNowDiv.textContent = 'BOOK NOW';
+        bookNowDiv.className = 'bookNowDiv'
 
         let showMoreDiv = document.createElement('button');
         infoContainer.appendChild(showMoreDiv);
@@ -93,7 +95,7 @@ function render() {
         showMoreDiv.onclick = function showMore() {
             if (extraImgContainer.style.display === 'none') {
                 displayNone()
-                extraImgContainer.style.display = 'block';
+                extraImgContainer.style.display = 'grid';
                 showMoreDiv.textContent = 'SHOW LESS'
             } else {
                 extraImgContainer.style.display = 'none';
@@ -182,27 +184,27 @@ form.addEventListener('submit', function filteringData(event) {
     // if statement for the 4 cases: if capacity and location false
     if (form.location.value === '' && form.capacity.value === '') {
         for (let i = 0; i < allVillas.length; i++) {
-            allVillas[i].style.display = 'block';
+            allVillas[i].style.display = 'grid';
         }
         // if capacity false
     } else if (form.capacity.value === '') {
         for (let i = 0; i < allVillas.length; i++) {
             if (Villas.all[i].location === form.location.value) {
-                allVillas[i].style.display = 'block';
+                allVillas[i].style.display = 'grid';
             }
         }
         // if location false
     } else if (form.location.value === '') {
         for (let i = 0; i < allVillas.length; i++) {
             if (Villas.all[i].capacity === form.capacity.value) {
-                allVillas[i].style.display = 'block';
+                allVillas[i].style.display = 'grid';
             }
         }
         // if capacity and location are true
     } else {
         for (let i = 0; i < allVillas.length; i++) {
             if (Villas.all[i].capacity === form.capacity.value && Villas.all[i].location === form.location.value) {
-                allVillas[i].style.display = 'block'
+                allVillas[i].style.display = 'grid'
             }
         }
     }
