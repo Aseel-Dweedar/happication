@@ -11,23 +11,35 @@
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <img class="logo" src="../img/logo.png" alt="logo">
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../html/about-us.html">Contact us</a>
+            <a href="../html/addCottage.html">Add Cottage</a>
+            <a href="../html/booking.html">Book Now</a>
+        </nav>
+    </header>
     <main>
         <form id="form">
             <fieldset>
                 <legend>ADD COTTAGE REQUEST</legend>
+                <div id="gridForm">
+                    <label for="ownerName">Owner's name</label>
 
-                <label for="ownerName">Owner's name</label>
-                <input type="text" id="ownerName">
+                    <input type="text" id="ownerName" required>
 
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" placeholder="07">
+                    <label for="phone">Phone Number</label>
 
-                <label for="cottageName">Cottage's name</label>
-                <input type="text" id="cottageName">
+                    <input type="tel" id="phone" placeholder="07" required>
 
-                <label for="location">Cottage's Location</label>
-                <select id="location">
+                    <label for="cottageName">Cottage's name</label>
+
+                    <input type="text" id="cottageName" required>
+
+                    <label for="location">Cottage's Location</label>
+
+                    <select id="location" required>
                     <option value="Amman">Amman</option>
                     <option value="Irbid">Irbid</option>
                     <option value="Zarqa">Zarqa</option>
@@ -42,27 +54,31 @@
                     <option value="Aqaba">Aqaba</option>
                 </select>
 
-                <label for="price">Price Per Night</label>
-                <input type="number" id="price" step="10" min="0" placeholder="JOD">
+                    <label for="price">Price Per Night</label>
 
+                    <input type="number" id="price" step="10" min="0" placeholder="JOD" required>
+                </div>
                 <label for="description">Description</label>
-                <input type="text" id="description" placeholder="Describe your cottage, what do you have there !! ">
+                <br>
+                <input type="text" id="description" placeholder="Describe your cottage, what do you have there !! " required>
 
-                <input type="checkbox" id="agree">
+                <br>
+                <input type="checkbox" id="agree" required>
                 <label for="agree">I agree to the <a href="">Terms Of Service</a></label>
-
+                <br>
                 <button id="submit">Add New Cottage</button>
-
             </fieldset>
         </form>
-        <div>
-            <h3>Cottages List</h3>
-            <div id="cottagesList">
-            </div>
-
-        </div>
+        <div id="cottagesList"></div>
     </main>
-    <footer></footer>
+    <footer>
+        <div id="social-contact">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+        </div>
+        <p>All Rights reserved &copy; Happication 2021</p>
+    </footer>
     <script src="../js/addCottage.js"></script>
 </body>
 
