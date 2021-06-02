@@ -65,7 +65,7 @@ function render() {
         if (request.textContent === "Pending") {
             let deleteRequest = document.createElement('button')
             oneCottage.appendChild(deleteRequest);
-            deleteRequest.textContent = 'DELETE REQUEST';
+            deleteRequest.textContent = 'Delete request';
             deleteRequest.onclick = function() {
                 Cottage.all.splice(i, 1);
                 saveData();
@@ -101,7 +101,6 @@ function getData() {
         Cottage.all = addNewCottage;
         render()
     } else {
-        new Cottage('acceptedP', 'Ahmed Omari', 'Our Nights Villa', 'Jerash', 160)
         new Cottage('acceptedP', 'Dania Soud', 'Viki Rose Villa', 'Madaba', 180)
         new Cottage('inProgress', 'Fayez Dweedar', 'Aqua Day Villa', 'Amman', 250)
         render()
