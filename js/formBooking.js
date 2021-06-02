@@ -33,7 +33,9 @@ form.addEventListener('submit', function confirmationFunction(event) {
     closeBtn.onclick = function() {
         model.style.display = "none";
     }
-    window.onclick = function() {
-        model.style.display = "none";
+    window.onclick = function(event) {
+        if (event.target === model) {
+            model.style.display = "none";
+        }
     }
 });
