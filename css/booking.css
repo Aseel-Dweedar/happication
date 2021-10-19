@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
+header {
+    background-color: #3d84b8;
+    height: 100px;
+}
+
+.logo {
+    width: 70px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+nav {
+    position: absolute;
+    right: 70px;
+    top: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    padding: 10px 30px;
+    font-size: 20px;
+}
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+main {
+    width: 85%;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#formField {
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 2fr;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background: #eee;
+    border: none;
+    border-bottom: 2px solid #999b84;
+}
+
+#gridForm {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+select {
+    height: 25px;
+    margin-top: 5px;
+    width: 80%;
+}
+
+#submit {
+    border: none;
+    width: 200px;
+    height: 35px;
+    margin: auto;
+    background-color: #3d84b8;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#submit:hover {
+    background-color: #a2b29f;
+    color: black;
+}
+
+.oneVillaDiv {
+    padding: 5px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 40px;
+    background: #eee;
+    border-bottom: 3px solid gray;
+    border-right: 3px solid gray;
+}
+
+.thumbnailImg {
+    width: 300px;
+    height: 270px;
+    border: 3px;
+    border-style: inset;
+}
+
+.oneVillaDiv h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    color: #194350;
+    margin-top: 10px;
+}
+
+.oneVillaDiv p {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #232323;
+}
+
+.oneVillaDiv p:nth-child(4) {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.bookNowDiv {
+    border: none;
+    width: 150px;
+    height: 40px;
+    background-color: #fdcb40e0;
+    border-radius: 3px;
+    margin: 20px 0px;
+}
+
+.ShowMoreDiv {
+    border: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 3px;
+    margin: 20px 20px;
+    border: 2px solid #fdcb40e0;
+}
+
+.bookNowDiv:hover {
+    background-color: black;
+    color: white;
+}
+
+.ShowMoreDiv:hover {
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.extraImgContainer {
+    grid-template-columns: repeat(3, 3fr);
+    gap: 5px;
+}
+
+.extraImgContainer img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0.2px 0.2px rgba(128, 128, 128, 0.411);
+}
+
+footer {
+    text-align: center;
+    background-color: #3d84b8;
+    height: 70px;
+    color: white;
+}
+
+#social-contact i {
+    margin-top: 20px;
+    padding: 0px 10px;
+    padding-bottom: 7px;
+}
+
+#social-contact i:hover {
+    color: black;
+}
+
+footer p {
+    font-size: 3mm;
+    font-family: 'Open Sans', sans-serif;
+}

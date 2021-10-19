@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HC | Confirm Reservation</title>
+    <link rel="icon" href="../img/icon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/9e5d1913ca.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/bookingForm.css">
+    <link rel="stylesheet" href="../css/reset.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="../img/logo.png" alt="logo">
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../html/about-us.html">Contact us</a>
+            <a href="../html/addCottage.html">Add Cottage</a>
+            <a href="../html/booking.html">Book Now</a>
+        </nav>
+    </header>
+    <main>
+        <div id="contener">
+            <div id="villaInfo"></div>
+            <form id="form">
+
+                <label for="firstName">First Name</label>
+                <br>
+                <input type="text" id="firstName" required>
+                <br>
+                <label for="lastName">Last Name</label>
+                <br>
+                <input type="text" id="lastName" required>
+                <br>
+                <label for="phone">Phone Number</label>
+                <br>
+                <input type="number" id="phone" placeholder="07" required>
+                <br>
+                <label for="userEmail">E-mail</label>
+                <br>
+                <input type="email" id="userEmail" placeholder="Example@Gmail.com" required>
+                <br>
+                <label for="checkIn">Check-In Date</label>
+                <br>
+                <input type="date" id="checkIn" required>
+                <br>
+                <label for="checkOut">Check-Out Date</label>
+                <br>
+                <input type="date" id="checkOut" required>
+                <br>
+                <button id="submit">Confirm Reservation</button>
+
+            </form>
+        </div>
+        <div id="model">
+            <div id="modelBody">
+                <div>
+                    <img src="../img/logo.png" alt="">
+                </div>
+                <p>We have received your reservation request. You will be contacted by the owner of this cottage within a maximum period of 12 working hours.
+                </p>
+                <button id="closeBtn">Close</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="social-contact">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+        </div>
+        <p>All Rights reserved &copy; Happication 2021</p>
+    </footer>
+    <script src="../js/formBooking.js"></script>
+</body>
+
+</html>
